@@ -1,4 +1,4 @@
-PROJ_DIR=main.py Model View Controller
+PROJ_DIR=$(CURDIR)
 VENV?=venv
 PYTHON=$(CURDIR)/$(VENV_BIN)/python
 
