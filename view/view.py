@@ -1,6 +1,8 @@
 """The Graphical User Interface"""
 import customtkinter as ctk
 
+# pylint: disable=R0901
+
 class view(ctk.CTkFrame):
     """
     A class to represent a view.
@@ -25,18 +27,6 @@ class view(ctk.CTkFrame):
         self.label = ctk.CTkLabel(self, text='ARs:')
         self.label.grid(row=0, column=0)
 
-        # email entry
-        # self.email_var = ctk.StringVar()
-        # self.email_entry = ctk.CTkEntry(self, textvariable=self.email_var, width=30)
-        # self.email_entry.grid(row=1, column=1, sticky=ctk.NSEW)
-
-        # save button
-        # self.save_button = ctk.CTkButton(self, text='Save', command=self.save_button_clicked)
-        # self.save_button.grid(row=1, column=3, padx=10)
-
-        # message
-        # self.message_label = ctk.CTkLabel(self, text='', foreground='red')
-        # self.message_label.grid(row=2, column=1, sticky=ctk.W)
 
         # set the controller
         self.controller = None

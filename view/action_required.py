@@ -1,6 +1,8 @@
 """File that creates AR UI"""
 import customtkinter as ctk
 
+# pylint: disable=R0901
+
 class action_required(ctk.CTkFrame):
     """
     A class to represent a view.
@@ -20,6 +22,3 @@ class action_required(ctk.CTkFrame):
     def __init__(self, parent):
         """Test Code for TKinter Project"""
         super().__init__(parent)
-
-        
-

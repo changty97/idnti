@@ -1,5 +1,6 @@
 """Database Functions"""
-import re
+
+# pylint: disable=W1514
 
 class model:
     """Model saves data into Excel"""
@@ -18,11 +19,7 @@ class model:
         :param value:
         :return:
         """
-        # pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
-        # if re.fullmatch(pattern, value):
         self.__data = value
-        # else:
-        #     raise ValueError(f'Invalid data: {value}')
 
     def save(self):
         """
