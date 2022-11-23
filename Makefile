@@ -22,7 +22,7 @@ venv: requirements.txt
 	test -n "$(NO_PIP_INSTALL)" || $(PIP) install -U pip
 	test -n "$(NO_PIP_INSTALL)" || $(PIP) install -Ur requirements.txt
 
-lint:
+lint: venv
 	$(PYLINT) --rcfile=.pylintrc -r n $(PROJ_DIR)
 
 clean:
