@@ -1,3 +1,4 @@
 customtkinter
+pre-commit
 pyinstaller
 pylint
