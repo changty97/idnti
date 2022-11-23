@@ -1,6 +1,4 @@
 """API between view and model"""
-from model import model
-from view import view
 
 class controller:
     """Class controller saves data"""
@@ -27,3 +25,11 @@ class controller:
         except ValueError as error:
             # show an error message
             self.view.show_error(error)
+
+    def get_data(self):
+        """
+        Get the data
+        :param data:
+        :return:
+        """
+        print(self.model.data)

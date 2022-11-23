@@ -1,10 +1,11 @@
 """File that runs main program"""
 import customtkinter as ctk
-from model import model
-from view import view
-from controller import controller
-from view.action_required import action_required
+# from model import model
+# from view import view
+# from controller import controller
+# from view.action_required import action_required
 
+# pylint: disable=R0902
 
 class app(ctk.CTk):
     """Constructor that initialises the GUI"""
@@ -116,9 +117,11 @@ class app(ctk.CTk):
         # self.notes.configure(state="enable")
 
     def button_callback(self):
+        """Button is Clicked"""
         print("pressed")
 
-    def optionmenu_callback(choice):
+    def optionmenu_callback(self, choice):
+        """Dropdown menu is selected"""
         print("optionmenu dropdown clicked:", choice)
 
 
