@@ -1,6 +1,6 @@
 """The Graphical User Interface"""
 import customtkinter as ctk
-from view.editablelistbox import editablelistbox
+from .editablelistbox import editablelistbox
 
 # import tkinter as tk
 
