@@ -2,3 +2,5 @@ customtkinter
 pre-commit
 pyinstaller
 pylint
+tkcalendar
+tkhtmlview
