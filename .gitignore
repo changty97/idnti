@@ -1,2 +1,3 @@
 venv
-view/__pycache__
+archive
+__pycache__
